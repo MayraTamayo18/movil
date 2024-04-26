@@ -17,7 +17,7 @@ class MainActivity : AppCompatActivity() {
     var numero1: Double = 0.0
     // lateinit var-> permite inicializar una propiedad no anulable
     // se reaklizo para poder utilizarlos en cualquien funcion sin
-    //necesidad de volver a declararlos
+    //necesidad de volver a declararlos variables globales
     lateinit var tv1: TextView
     lateinit var  tv2:TextView
 
@@ -34,7 +34,8 @@ class MainActivity : AppCompatActivity() {
 
         tv1=findViewById(R.id.tv1)
         tv2=findViewById(R.id.tv2)
-        // creamos nuestro boton borra
+
+        // creamos nuestro boton borra igual
         val btnBorrar : Button=findViewById(R.id.btnBorrar)
         val btnIgual : Button=findViewById(R.id.btnIgual)
 
@@ -78,6 +79,7 @@ class MainActivity : AppCompatActivity() {
             R.id.btn6->tv2.setText(num2 + "6")
             R.id.btn7->tv2.setText(num2 + "7")
             R.id.btn8->tv2.setText(num2 + "8")
+            R.id.btn9->tv2.setText(num2 + "9")
             R.id.btnPunto->tv2.setText(num2 + ".")
 
             // OJITO: en la vista se le aplica tambien el onclick a cada boton
