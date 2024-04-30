@@ -41,15 +41,20 @@ class MainActivity : AppCompatActivity() {
 
         btnIgual.setOnClickListener{
             var numero2: Double=tv2.text.toString().toDouble()
-            var respuesta: Double=0.0
-            when(operacion) {
-                1 -> respuesta = numero1 + numero2
-                2-> respuesta= numero1 - numero2
-                3-> respuesta= numero1 * numero2
-                4-> respuesta= numero1 / numero2
+            if (numero2 != 0.0){
+                var respuesta: Double=0.0
+                when(operacion) {
+                    1 -> respuesta = numero1 + numero2
+                    2-> respuesta= numero1 - numero2
+                    3-> respuesta= numero1 * numero2
+                    4-> respuesta= numero1 / numero2
             }
-            tv2.setText(respuesta.toString())
-            tv1.setText("")
+                tv2.setText(respuesta.toString())
+                tv1.setText("")
+            }else{
+                tv2.setText("Error: No se puede dividir por cero")
+            }
+
         }
         btnBorrar.setOnClickListener{
             tv1.setText("")
