@@ -64,16 +64,16 @@ class MainActivity : AppCompatActivity() {
         }
     }
     // creamos una funcion para los botonella la cual va a tener una parametro de entrada
-    // view ->( se refiere lo vamos a mandar a llamar con un elemento de la vista (resive una vista))
+    // view ->( se refiere lo vamos a mandar a llamar con un elemento de la vista (recibe una vista))
     fun digitos(view: View){
         // creamos una variable para llamar o traer el textView 2(tv2)
         // val tv2: TextView=findViewById(R.id.tv2)-> gracias a lateinit var ya no necesitamos volver a declarar
-        //  creamos una variable para el valor llamar o traer el valornumerico
+        //  creamos una variable para el valor llamar o traer el valor numerico
         // se convierte el num2 a el tipo de dato String y se llama tv2
         // el texto lo convertimos a un string
         var num2: String=tv2.text.toString()
         // creamos un when para mandar a llamar el elemento view id
-        // para darle funcionalidad a los botones y que aparesca los numeros del boton en el textView tv2
+        // para darle funcionalidad a los botones y que aparezca los numeros del boton en el textView tv2
         when (view.id){
             R.id.btn0->tv2.setText(num2 + "0")
             R.id.btn1->tv2.setText(num2 + "1")
@@ -97,10 +97,10 @@ class MainActivity : AppCompatActivity() {
     fun clicOperacion(view: View){
        numero1= tv2.text.toString().toDouble()
         var tv2_text: String= tv2.text.toString()
-        //para cuando mandamos los unumero al texViw tv1 hay que actuaalizar el tv2 en 0.0
+        //para cuando mandamos los un numero al texViw tv1 hay que actualizar el tv2 en 0.0
         tv2.setText("")
         when(view.id){
-            // cuando el que llamen sea el boton sumar
+            // cuando  llamen el boton sumar
             R.id.btnSuma->{
                 // al darle en el boton de suma ademas de enviarle  el signo +
                 // tambien le decimos a nuestro programa que va a realizar la operacion de suma
