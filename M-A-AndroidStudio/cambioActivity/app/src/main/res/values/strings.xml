@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">cambio Activity</string>
+    <string name="boton1">cambio Activity 2</string>
+    <string name="boton2">cambio Activity 3 </string>
+    <string name="mensajeActivity2">hola esta es la actividad 2 </string>
+    <string name="mensajeActivity3">hola esta es la actividad 3 </string>
+</resources>
